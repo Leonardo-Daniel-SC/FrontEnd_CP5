@@ -1,12 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Tailwind</title>
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <nav
+            class="nav-bar flex items-center justify-between bg-black/85 p-6 px-30 text-white fixed top-0 left-0 w-full pt-5 pb-5 z-1000">
+            <a class="nav-logo items-center w-25" href="#"><img src="./images/link_Microsoft.png"
+                    alt="Microsoft Logo"></a>
+            <a class="nav-logo items-center w-20" href="#"><img src="./images/link_Xbox.png" alt="Xbox Logo"></a>
+            <ul class="nav-lista-links style-none flex gap-5 pl-15 text-sm">
+                <li class="nav-link hover:text-green-700"><a href="#">Game Pass</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Jogos</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Dispositivos</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Jogar</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Comunidade</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Suporte</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Meu Xbox</a></li>
+                <li class="nav-link hover:text-green-700"><a href="#">Desenvolvedor</a></li>
+            </ul>
+            <div class="nav-icons flex gap-5 text-sm">
+                <a class="nav-icon flex items-center gap-2 hover:text-green-700" href="#">Busca<img
+                        src="./images/lupa.svg" alt="Lupa"></a>
+                <a class="nav-icon flex items-center gap-2 hover:text-green-700" href="#">Carrinho<img
+                        src="./images/carrinho.svg" alt="Carrinho"></a>
+                <a class="nav-icon flex items-center gap-2 hover:text-green-700" href="#">Conta<img class="w-6 h-6"
+                        src="./images/conta_Picture.svg" alt="Conta"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-hero bg-[url('./images/hero1.png')] bg-cover bg-center bg-no-repeat h-screen">
+        <div class="hero-conteudo text-white flex flex-col justify-start gap-5 pl-30 pt-60 max-w-2xl">
+            <h1 class="conteudo-titulo font-bold text-5xl">Xbox Game Pass</h1>
+            <p class="conteudo-descricao text-lg">Jogue novos títulos no dia do lançamento. Além disso, jogue centenas
+                de títulos de alta qualidade com amigos no console, no PC ou na nuvem. Estamos sempre adicionando novos
+                títulos, então há sempre algo novo para jogar.</p>
+            <a class="conteudo-botao bg-[#9BF00B] text-gray-700 font-bold py-2 px-4 rounded hover:bg-[#8ad00a] max-w-max ease
+            -in-out duration-300"
+                href="#">Junte-se ao Xbox Game Pass</a>
+            <p class="conteudo-subdescricao text-sm text-gray-300">A assinatura é renovada automaticamente pelo preço
+                mensal, a menos que seja cancelada através da sua conta Microsoft. Consulte as <a href="#"
+                    class="text-green-700 hover:underline">condições</a>.</p>
+        </div>
+        
+    </section>
+
+    <section class="container-jogos bg-[url('./images/hero2.png')] bg-contain bg-center bg-no-repeat min-h-screen aspect-[1920/2439] ">
+        <h2 class="text-white text-3xl font-bold pb-5 text-center">Descubra o seu próximo jogo favorito</h2>
+        <div class="jogos-colecao flex flex-wrap justify-center gap-3 pt-8">
+            <div
+                class="jogo-card bg-[url('./images/jogo1.png')] bg-cover bg-center bg-no-repeat w-55 h-80 flex items-end text-white justify-center grayscale-70 blur-[2px] hover:filter-none transition ease-in-out duration-300">
+                <div
+                    class="jogo-info bg-gradient-to-t from-black to-transparent flex justify-center p-2 w-55 h-30 items-end pb-4">
+                    <h3 class="text-lg font-semibold text-lg">Naruto Storm 4</h3>
+                </div>
+            </div>
+            <div
+                class="jogo-card bg-[url('./images/jogo2.png')] bg-cover bg-center bg-no-repeat w-55 h-80 flex items-end text-white justify-center grayscale-70 blur-[2px] hover:filter-none transition ease-in-out duration-300">
+                <div
+                    class="jogo-info bg-gradient-to-t from-black to-transparent flex justify-center p-2 w-55 h-30 items-end pb-4">
+                    <h3 class="text-lg font-semibold text-lg">KOF XV</h3>
+                </div>
+            </div>
+            <div
+                class="jogo-card bg-[url('./images/jogo3.png')] bg-cover bg-center bg-no-repeat w-55 h-80 flex items-end text-white justify-center grayscale-70 blur-[2px] hover:filter-none transition ease-in-out duration-300">
+                <div
+                    class="jogo-info bg-gradient-to-t from-black to-transparent flex justify-center p-2 w-55 h-30 items-end pb-4">
+                    <h3 class="text-lg font-semibold text-lg">GTA V</h3>
+                </div>
+            </div>
+            <div
+                class="jogo-card bg-[url('./images/jogo4.png')] bg-cover bg-center bg-no-repeat w-55 h-80 flex items-end text-white justify-center grayscale-70 blur-[2px] hover:filter-none transition ease-in-out duration-300">
+                <div
+                    class="jogo-info bg-gradient-to-t from-black to-transparent flex justify-center p-2 w-55 h-30 items-end pb-4">
+                    <h3 class="text-lg font-semibold text-lg">Death Stranding</h3>
+                </div>
+            </div>
+            <div
+                class="jogo-card bg-[url('./images/jogo5.png')] bg-cover bg-center bg-no-repeat w-55 h-80 flex items-end text-white justify-center grayscale-70 blur-[2px] hover:filter-none transition ease-in-out duration-300">
+                <div
+                    class="jogo-info bg-gradient-to-t from-black to-transparent flex justify-center p-2 w-55 h-30 items-end pb-4">
+                    <h3 class="text-lg font-semibold text-lg">FIFA 23</h3>
+                </div>
+            </div>
+        </div>
+        <div class="conteudo-titulo ">
+            <h2 class="text-white text-6xl font-bold text-center mt-15 max-w-3xl mx-auto">JOGUE CENTENAS DE TÍTULOS DE
+                ALTA QUALIDADE</h2>
+            <div class="bg-[#9BF00B] h-2 w-[60px] mx-auto mt-4"></div>
+        </div>
+
+        <div class="conteudo-descricao mt-10 grid grid-cols-1 md:grid-cols-2 mt-30 pl-30">
+            <div class="grid text-center gap-10 grid-cols-1 md:grid-cols-2 px-15">
+                <div class="flex flex-col items-center gap-2 max-w-[250px] mx-auto">
+                    <h2 class="text-white text-5xl font-bold">GOLD</h2>
+                    <p class="text-lg text-gray-300">O Xbox Live Gold está incluído</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 max-w-[250px] mx-auto">
+                    <h2 class="text-white text-5xl font-bold flex items-center justify-center gap-2"><img class="w-9" src="./images/EA.svg" alt="EA Play" class="w-16 h-16">Play</h2>
+                    <p class="text-lg text-gray-300">Assinatura do EA Play incluída</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 max-w-[250px] mx-auto ">
+                    <img class="w-20" src="./images/joystick.svg" alt="joystick">
+                    <p class="text-lg text-gray-300">Jogue no PC, em celulares, tablets, TVs e consoles a partir da nuvem.</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 max-w-[250px] mx-auto">
+                    <img class="w-20" src="./images/baixar.svg" alt="baixar">
+                    <p class="text-lg text-gray-300">Baixe jogos para consoles e PC</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 max-w-[250px] mx-auto">
+                    <img class="w-20" src="./images/recompensa.svg" alt="recompensa">
+                    <p class="text-lg text-gray-300">Recompensas gratuitas e descontos exclusivos para assinantes</p>
+                </div>
+                <div class="flex flex-col items-center gap-2 max-w-[250px] mx-auto">
+                    <img class="w-20" src="./images/estrela.svg" alt="estrela">
+                    <p class="text-lg text-gray-300">Muitos jogos novos são adicionadosconstantemente, incluindo novos lançamentos no dia da estreia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-planos bg-white pt-40 pb-20">
+        <div class="planos-conteudo text-center flex flex-col items-center gap-5 max-w-3xl mx-auto">
+            <img class="planos-img w-90" src="./images/Xbor_verde.svg" alt="">
+            <h1 class="planos-title font-bold text-3xl">Escolha o plano ideal para você</h1>
+            <p class="planos-description text-lg">Você prefere jogar no PC? É fã de consoles? Existe um plano de assinatura ideal para você. Ou aproveite todo o conteúdo com o Ultimate, incluindo a possibilidade de jogar títulos via nuvem, o Xbox Live Gold e muito mais.</p>
+            <p class="planos-codigo text-lg">Você tem um código ou um vale-presente? <a class="planos-link font-medium text-green-700 hover:underline" href="#">Resgatar</a></p>
+        </div>
+
+        <div class="planos-cads grid grid-cols-2 md:grid-cols-4 gap-3 mx-20 pt-5">
+
+            <div class="planos-card bg-[#505050] text-white text-center pt-5 pb-15 rounded-xl hover:bg-[#444444] transition ease-in-out duration-300 px-5 ">
+                <h3 class="card-titulo font-bold text-2xl">Ultimate</h3>
+                <h3 class="card-preco text-lg pb-10 py-5">R$ 76,90/mês</h3>
+                <a class="planos-link font-bold bg-[#A0A0A0] rounded-md text-gray-700 font-bold py-2 px-4 hover:bg-[#7F7F7F] ease-in-out duration-300" href="#">Selecionar ></a>
+                <p class="card-descricao pt-5 text-gray-200">A assinatura é renovada automaticamente. Consulte os <a class="planos-link text-green-500 hover:underline" href="#"> termos</a>.</p>
+                <div class="card-jogos pt-3 text-start">
+                    <h3 class="card-subtitulo font-bold text-lg pt-5">Mais de 400 jogos</h3>
+                    <P>disponíveis no console, no PC e em outros dispositivos</P>
+                </div>
+                <ul class="card-beneficios style-none">
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Novos jogos no primeiro dia.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">EA Play, Clube Fortnite e Ubisoft+ Classics.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white ">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Tempo de jogo na nuvem (15 horas/mês)</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Benefícios para jogos como League of Legends e Call of Duty: Warzone.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Multijogador online no console.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Ganhe 4x pontos do Rewards.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="planos-card bg-[#107C10] text-white text-center pt-5 pb-15 rounded-xl hover:bg-[#0f6c0f] transition ease-in-out duration-300 px-5">
+                <h3 class="card-titulo font-bold text-2xl">Premium</h3>
+                <h3 class="card-preco text-lg pb-10 py-5">R$ 59,90/mês</h3>
+                <a class="planos-link font-bold bg-[#9BF00B] rounded-md text-gray-700 font-bold py-2 px-4 hover:bg-[#75C101] ease-in-out duration-300" href="#">Selecionar ></a>
+                <p class="card-descricao pt-5 text-gray-200">A assinatura é renovada automaticamente. Consulte os <a class="planos-link text-green-500 hover:underline" href="#"> termos</a>.</p>
+                <div class="card-jogos pt-3 text-start">
+                    <h3 class="card-subtitulo font-bold text-lg pt-5">Mais de 200 jogos</h3>
+                    <P>disponíveis no console, no PC e em outros dispositivos</P>
+                </div>
+                <ul class="card-beneficios style-none">
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Novos jogos publicados no XBOX até 1 ano após o lançamento.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Tempo de jogo na nuvem (10 horas/mês).</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white ">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Benefícios para jogos como League of Legends e Call of Duty: Warzone.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Multijogador online no console.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Ganhe 2x pontos do Rewards.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="planos-card bg-[#107C10] text-white text-center pt-5 pb-15 rounded-xl hover:bg-[#0f6c0f] transition ease-in-out duration-300 px-5">
+                <h3 class="card-titulo font-bold text-2xl">Somente PC</h3>
+                <h3 class="card-preco text-lg pb-10 py-5">R$ 59,99/mês</h3>
+                <a class="planos-link font-bold bg-[#9BF00B] rounded-md text-gray-700 font-bold py-2 px-4 hover:bg-[#75C101] ease-in-out duration-300" href="#">Selecionar ></a>
+                <p class="card-descricao pt-5 text-gray-200">A assinatura é renovada automaticamente. Consulte os <a class="planos-link text-green-500 hover:underline" href="#"> termos</a>.</p>
+                <div class="card-jogos pt-3 text-start">
+                    <h3 class="card-subtitulo font-bold text-lg pt-5">Mais de 300 jogos</h3>
+                    <P>disponíveis somente no PC</P>
+                </div>
+                <ul class="card-beneficios style-none">
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Novos jogos no primeiro dia.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">EA Play.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white ">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Benefícios para jogos como League of Legends e Call of Duty: Warzone.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Ganhe 2x pontos do Rewards.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="planos-card bg-[#107C10] text-white text-center pt-5 pb-15 rounded-xl hover:bg-[#0f6c0f] transition ease-in-out duration-300 px-5">
+                <h3 class="card-titulo font-bold text-2xl">Essential</h3>
+                <h3 class="card-preco text-lg pb-10 py-5">R$ 43,90/mês</h3>
+                <a class="planos-link font-bold bg-[#9BF00B] rounded-md text-gray-700 font-bold py-2 px-4 hover:bg-[#75C101] ease-in-out duration-300" href="#">Selecionar ></a>
+                <p class="card-descricao pt-5 text-gray-200">A assinatura é renovada automaticamente. Consulte os <a class="planos-link text-green-500 hover:underline" href="#"> termos</a>.</p>
+                <div class="card-jogos pt-3 text-start">
+                    <h3 class="card-subtitulo font-bold text-lg pt-5">Mais de 50 jogos</h3>
+                    <P>disponíveis no console, no PC e em outros dispositivos</P>
+                </div>
+                <ul class="card-beneficios style-none">
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Tempo de jogo na nuvem (5 horas/mês).</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white ">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Benefícios para jogos como League of Legends e Call of Duty: Warzone.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Multijogador online no console.</p>
+                    </li>
+                    <li class="card-beneficio flex justify-start gap-2 pt-5 text-white">
+                        <img src="./images/positivo.svg" alt="positivo" class="beneficio-icone inline-block">
+                        <p class="beneficio-descricao text-start">Ganhe pontos do Rewards.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <img src="./images/Xbox_all-Access.png" alt="Xbox All Access" class="planos-img w-full mt-10">
+        <div class="planos-conteudo text-center flex flex-col items-center gap-5 max-w-3xl mx-auto">
+            <img class="planos-img w-90" src="./images/Xbor_verde.svg" alt="">
+            <h1 class="planos-title font-bold text-3xl">Seu acesso total ao mundo do Xbox</h1>
+            <p class="planos-description text-lg">Adquira um console Xbox Series X ou Xbox Series S, além de uma assinatura de 24 meses do Xbox Game Pass Ultimate, a partir de R$ 139,91 por mês, durante 24 meses.</p>
+            <a class="planos-link font-bold text-green-700 hover:underline" href="#">Saiba mais ></a>
+        </div>
+    </section>
+
+    <footer class="container-footer">
+        <div class="footer-redes flex gap-4 pl-45">
+            <h3 class="font-semibold mb-2 text-lg">Siga o Game Pass</h3>
+            <ul class="list-none flex gap-4">
+                <li><a href="#"><img src="./images/email.svg" alt="Email" class="w-6 h-6"></a></li>
+                <li><a href="#"><img src="./images/x.png" alt="X" class="w-5.5 h-5.5"></a></li>
+                <li><a href="#"><img src="./images/instagram.svg" alt="Instagram" class="w-6 h-6"></a></li>
+            </ul>
+        </div>
+        <div class="footer-conteudo px-4 bg-black text-white py-10">
+            <div class="footer-links grid grid-cols-1 md:grid-cols-4 gap-20 mx-auto max-w-6xl">
+                <div class="footer-link">
+                    <h3 class="font-bold mb-2 text-lg">Navegue</h3>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-green-700">XBOX consoles</a></li>
+                        <li><a href="#" class="hover:text-green-700">Jogos XBOX</a></li>
+                        <li><a href="#" class="hover:text-green-700">XBOX Game Pass</a></li>
+                        <li><a href="#" class="hover:text-green-700">Acessórios do XBOX</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h3 class="font-bold mb-2 text-lg">Recursos</h3>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-green-700">Notícias do XBOX</a></li>
+                        <li><a href="#" class="hover:text-green-700">Suporte do XBOX</a></li>
+                        <li><a href="#" class="hover:text-green-700">Feedback</a></li> 
+                        <li><a href="#" class="hover:text-green-700">Padrões da Comunidade</a></li> 
+                        <li><a href="#" class="hover:text-green-700">Aviso de potenciais convulsões por fotossensibilidade</a></li> 
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h3 class="font-bold mb-2 text-lg">Microsoft Store</h3>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-green-700">Conta Microsoft</a></li>
+                        <li><a href="#" class="hover:text-green-700">Suporte da Microsoft Store</a></li>
+                        <li><a href="#" class="hover:text-green-700">Devoluções</a></li>
+                        <li><a href="#" class="hover:text-green-700">Rastreamento de pedidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-link">
+                    <h3 class="font-bold mb-2 text-lg">Para desenvolvedores</h3>
+                    <ul class="list-none">
+                        <li><a href="#" class="hover:text-green-700">Jogos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-sm text-gray-400">&copy; 2026 Xbox Game Pass. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
